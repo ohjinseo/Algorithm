@@ -131,13 +131,12 @@ void comb(int idx, int cnt) {
 	}
 
 	for (int i = idx; i < m; i++) {
-		if (!visited[i]) {
-			visited[i] = true;
+
+
 			archer.push_back({ n, i });
 			comb(i + 1, cnt + 1);
 			archer.pop_back();
-			visited[i] = false;
-		}
+
 	}
 }
 
